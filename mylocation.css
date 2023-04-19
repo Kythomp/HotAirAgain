@@ -62,8 +62,10 @@
     transition: 0.5s;
 }
 
+
 .banner-btn a:hover span{
     width: 100%;
+
 }
 
 .banner-btn a:hover{
@@ -121,21 +123,20 @@ nav ul li a:hover {
         display: block;
         margin: 20px auto;
     }
+
+    /* Adjust padding-top to take into account height of navbar and banner */
+    .wrapper {
+        position: relative; 
+        overflow: hidden;
+        height: calc(100vh - 50px);
+    }
+
+    .wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
-/*--feature--*/
-/*--feature--*/
-.wrapper {
-    position: relative; 
-    overflow: hidden;
-    padding-top: 56.25%;
-    min-height: 100vh;
-}
-
-.wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-}
